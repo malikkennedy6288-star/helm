@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Helm",
+      "hasCanvas": false,
+      "bodyTextLen": 564,
+      "bodyTextHash": "5b4a6bcc41c4931c9cdc5417ba1b72f1d8993b952654fc0a58fb656384549011",
+      "bodyTextPrefix": "Helm Northwind Labs WORKSPACE Overview Wallpaper Appearance Owne",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Helm",
+      "hasCanvas": false,
+      "bodyTextLen": 358,
+      "bodyTextHash": "f7ca9b604471cc4049a263024e2f40c5060371ea6d89f890c1e4d4b077894a77",
+      "bodyTextPrefix": "R CONTROL PLANE Northwind Labs Running as Root, even with nothin",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
