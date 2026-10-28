@@ -105,6 +105,29 @@ var Crown = createLucideIcon("crown", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Download = createLucideIcon("download", [
+	["path", {
+		d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",
+		key: "ih7n3h"
+	}],
+	["polyline", {
+		points: "7 10 12 15 17 10",
+		key: "2ggqvy"
+	}],
+	["line", {
+		x1: "12",
+		x2: "12",
+		y1: "15",
+		y2: "3",
+		key: "1vk2je"
+	}]
+]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Image = createLucideIcon("image", [
 	["rect", {
 		width: "18",
@@ -455,6 +478,22 @@ var SlidersHorizontal = createLucideIcon("sliders-horizontal", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Terminal = createLucideIcon("terminal", [["polyline", {
+	points: "4 17 10 11 4 5",
+	key: "akl6gq"
+}], ["line", {
+	x1: "12",
+	x2: "20",
+	y1: "19",
+	y2: "19",
+	key: "q2wloq"
+}]]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Trash2 = createLucideIcon("trash-2", [
 	["path", {
 		d: "M3 6h18",
@@ -603,4 +642,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Check as S, Lock as _, TriangleAlert as a, Image as b, Signal as c, Search as d, ScrollText as f, MapPin as g, Menu as h, Users as i, Shield as l, Palette as m, Wifi as n, Trash2 as o, Plus as p, WifiOff as r, SlidersHorizontal as s, X as t, ShieldCheck as u, LayoutDashboard as v, Crown as x, KeyRound as y };
+export { Crown as C, Download as S, MapPin as _, TriangleAlert as a, KeyRound as b, SlidersHorizontal as c, ShieldCheck as d, Search as f, Menu as g, Palette as h, Users as i, Signal as l, Plus as m, Wifi as n, Trash2 as o, ScrollText as p, WifiOff as r, Terminal as s, X as t, Shield as u, Lock as v, Check as w, Image as x, LayoutDashboard as y };

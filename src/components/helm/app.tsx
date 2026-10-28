@@ -11,6 +11,7 @@ import {
   Shield,
   SlidersHorizontal,
   Crown,
+  Terminal,
   Users,
   Wifi,
 } from "lucide-react";
@@ -35,6 +36,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { ConsolePanel } from "@/components/helm/console";
+import { InstallApp } from "@/components/helm/install";
 import {
   AuditPanel,
   FieldsPanel,
@@ -59,6 +62,7 @@ import {
 } from "@/lib/control";
 
 const ICONS: Record<SectionId, typeof LayoutDashboard> = {
+  console: Terminal,
   overview: LayoutDashboard,
   wallpaper: Image,
   appearance: Palette,
@@ -142,17 +146,25 @@ export function HelmApp() {
             <DesktopNav />
             <div className="flex min-w-0 flex-1 flex-col bg-bg/40">
               <TopBar />
-              <main className="min-h-0 flex-1 overflow-y-auto px-4 py-6 sm:px-8 sm:py-8">
-                <div className="mx-auto w-full max-w-4xl pb-24">
-                  <SectionBody section={section} />
-                </div>
+              <main
+                className={cn(
+                  "min-h-0 flex-1",
+                  section === "console" ? "flex flex-col overflow-hidden" : "overflow-y-auto px-4 py-6 sm:px-8 sm:py-8",
+                )}
+              >
+                {section === "console" ? (
+                  <ConsolePanel />
+                ) : (
+                  <div className="mx-auto w-full max-w-4xl pb-24">
+                    <SectionBody section={section} />
+                  </div>
+                )}
               </main>
             </div>
           </div>
           <CommandPalette />
         </div>
       </div>
-      <CommandPalette />
       <Toaster
         theme={resolvedTheme === "light" ? "light" : "dark"}
         position="bottom-right"
@@ -180,7 +192,7 @@ function SectionBody({ section }: { section: SectionId }) {
           section="appearance"
           kicker="Workspace"
           title="Appearance"
-          body="Theme, density, and motion. Changes apply while you edit — save to keep them."
+          body="Theme, density, and motion. Root applies them the moment you change them."
         />
       );
     case "owner":
@@ -297,7 +309,7 @@ function DesktopNav() {
       <div className="min-h-0 flex-1 overflow-y-auto pb-4">
         <NavList />
       </div>
-      <div className="border-t border-border p-3">
+      <div className="border-t border-border p-3 pb-16">
         <RootChip />
       </div>
     </aside>
@@ -412,6 +424,7 @@ function TopBar() {
         <Search className="size-4" />
       </Button>
       <div className="ml-auto flex items-center gap-2">
+        <InstallApp />
         {section !== "overview" ? (
           <Badge
             className="hidden sm:inline-flex"

@@ -25,6 +25,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { AccessBanner, Denied, FieldList } from "@/components/helm/fields";
+import { InstallApp } from "@/components/helm/install";
 import { cn } from "@/lib/utils";
 import { WALLPAPERS, resolveWallpaper } from "@/lib/wallpapers";
 import {
@@ -45,6 +46,7 @@ import {
 } from "@/lib/control";
 
 const TOWNS = [
+  { town: "Columbia", region: "South Carolina", country: "US", postal: "29201", timezone: "America/New_York" },
   { town: "Harborwick", region: "New York", country: "US", postal: "11222", timezone: "America/New_York" },
   { town: "Austin", region: "Texas", country: "US", postal: "78701", timezone: "America/Chicago" },
   { town: "London", region: "England", country: "GB", postal: "EC1A", timezone: "Europe/London" },
@@ -59,7 +61,7 @@ function TownPresets({ disabled }: { disabled: boolean }) {
   return (
     <div className="mb-4 rounded-2xl bg-surface p-5 shadow-[var(--shadow-border)]">
       <p className="text-sm font-medium">Set the town</p>
-      <p className="mt-1 text-sm text-muted">One tap fills town, region, country, postal code, and timezone.</p>
+      <p className="mt-1 text-sm text-muted">One tap fills town, region, country, postal code, and timezone. Or type any town in the fields below.</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {TOWNS.map((t) => (
           <button
@@ -124,6 +126,7 @@ export function OverviewPanel() {
         title={draft.settings.systemName}
         body="Running as Root, even with nothing else set up. Wallpaper, a new owner, town, networks, security, and globals all apply immediately. No save button. No approval."
       />
+      <InstallApp prominent />
       <div className="grid gap-3 sm:grid-cols-2">
         {tiles.map((t) => (
           <button

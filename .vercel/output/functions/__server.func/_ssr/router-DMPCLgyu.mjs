@@ -4,8 +4,8 @@ import { _ as createFileRoute, d as Scripts, f as HeadContent, g as lazyRouteCom
 import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
 import { a as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CT2oBxGV.js
-var router_CT2oBxGV_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DMPCLgyu.js
+var router_DMPCLgyu_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
@@ -299,7 +299,7 @@ function PreviewHostBridge() {
 	}, [router]);
 	return null;
 }
-var styles_default = "/assets/styles-CHdTE23m.css";
+var styles_default = "/assets/styles-DrbDu-QG.css";
 var APP_NAME = "Helm";
 var Route$1 = createRootRoute({
 	head: () => ({
@@ -326,16 +326,20 @@ var Route$1 = createRootRoute({
 				href: "/favicon.svg"
 			},
 			{
-				rel: "stylesheet",
-				href: styles_default
+				rel: "manifest",
+				href: "/manifest.webmanifest"
 			},
 			{
 				rel: "manifest",
 				href: "/__grok/manifest.webmanifest"
 			},
 			{
+				rel: "stylesheet",
+				href: styles_default
+			},
+			{
 				rel: "apple-touch-icon",
-				href: "/__grok/icon-180.png"
+				href: "/icon-192.png"
 			},
 			{
 				rel: "stylesheet",
@@ -353,7 +357,7 @@ var Route$1 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter = () => import("./routes-CunZ8lZs.mjs");
+var $$splitComponentImporter = () => import("./routes-Da_kBNNl.mjs");
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") }).update({
 	id: "/",
 	path: "/",
@@ -367,4 +371,4 @@ function getRouter() {
 	});
 }
 //#endregion
-export { getRouter, router_CT2oBxGV_exports as t };
+export { getRouter, router_DMPCLgyu_exports as t };

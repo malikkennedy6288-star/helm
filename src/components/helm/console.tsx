@@ -16,6 +16,7 @@ import {
 type Line = { id: number; kind: "in" | "out" | "err"; text: string };
 
 const TOWNS: Record<string, { town: string; region: string; country: string; postal: string; timezone: string }> = {
+  columbia: { town: "Columbia", region: "South Carolina", country: "US", postal: "29201", timezone: "America/New_York" },
   harborwick: { town: "Harborwick", region: "New York", country: "US", postal: "11222", timezone: "America/New_York" },
   austin: { town: "Austin", region: "Texas", country: "US", postal: "78701", timezone: "America/Chicago" },
   london: { town: "London", region: "England", country: "GB", postal: "EC1A", timezone: "Europe/London" },
@@ -57,7 +58,7 @@ function run(raw: string): { lines: string[]; error?: boolean; clear?: boolean }
         "wallpaper <name>               linen basalt harbor canopy adobe rain ink paper",
         "wallpaper color <#hex>",
         "owner <name>                   appoint a new owner",
-        "town <name>                    harborwick austin london berlin tokyo sydney",
+        "town <name>                    columbia harborwick austin london berlin tokyo sydney",
         "town set <Town>                any town name",
         "secure                         harden the system",
         "wifi                           list networks",

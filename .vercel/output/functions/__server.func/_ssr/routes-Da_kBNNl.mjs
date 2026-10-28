@@ -1,18 +1,18 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
 import { r as Slot, s as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
-import { S as Check, _ as Lock, b as Image$1, c as Signal, d as Search, f as ScrollText, g as MapPin, h as Menu, i as Users, l as Shield, m as Palette, n as Wifi, o as Trash2, p as Plus, r as WifiOff, s as SlidersHorizontal, t as X, u as ShieldCheck, v as LayoutDashboard, x as Crown, y as KeyRound } from "../_libs/lucide-react.mjs";
+import { C as Crown, S as Download, _ as MapPin, b as KeyRound, c as SlidersHorizontal, d as ShieldCheck, f as Search, g as Menu, h as Palette, i as Users, l as Signal, m as Plus, n as Wifi, o as Trash2, p as ScrollText, r as WifiOff, s as Terminal, t as X, u as Shield, v as Lock, w as Check, x as Image$1, y as LayoutDashboard } from "../_libs/lucide-react.mjs";
 import { n as toast, t as Toaster } from "../_libs/sonner.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { a as DialogOverlay$1, c as DialogTrigger$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { a as Label2, c as Separator2, i as ItemIndicator2, l as Trigger, n as Content2, o as Portal2, r as Item2, s as Root2, t as CheckboxItem2 } from "../_libs/@radix-ui/react-dropdown-menu+[...].mjs";
 import { n as Portal, r as Provider, t as Content2$1 } from "../_libs/@radix-ui/react-tooltip+[...].mjs";
+import { n as create, t as persist } from "../_libs/zustand.mjs";
 import { t as Root } from "../_libs/radix-ui__react-label.mjs";
 import { n as SwitchThumb, t as Switch$1 } from "../_libs/radix-ui__react-switch.mjs";
 import { i as SliderTrack, n as SliderRange, r as SliderThumb, t as Slider$1 } from "../_libs/@radix-ui/react-slider+[...].mjs";
-import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CunZ8lZs.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Da_kBNNl.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -179,164 +179,6 @@ var TooltipContent = import_react.forwardRef(({ className, sideOffset = 6, ...pr
 	...props
 }) }));
 TooltipContent.displayName = Content2$1.displayName;
-var Label = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root, {
-	ref,
-	className: cn("text-sm font-medium text-fg leading-none", className),
-	...props
-}));
-Label.displayName = Root.displayName;
-var Switch = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch$1, {
-	className: cn("peer relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full shadow-[var(--shadow-border)] transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-40 data-[state=checked]:bg-accent data-[state=unchecked]:bg-raised after:absolute after:inset-[-10px] after:content-['']", className),
-	...props,
-	ref,
-	children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SwitchThumb, { className: cn("pointer-events-none block size-5 translate-x-0.5 rounded-full bg-fg shadow-sm transition-transform duration-150 ease-out data-[state=checked]:translate-x-[22px] data-[state=checked]:bg-accent-fg") })
-}));
-Switch.displayName = Switch$1.displayName;
-var NativeSelect = import_react.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
-	ref,
-	className: cn("flex h-11 w-full appearance-none rounded-md bg-raised bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22none%22 stroke=%22%239a9890%22 stroke-width=%221.6%22><path d=%22M2.5 4.5 6 8l3.5-3.5%22/></svg>')] bg-[length:12px] bg-[right_12px_center] bg-no-repeat px-3 pr-9 text-sm text-fg shadow-[var(--shadow-border)] focus-visible:outline-none focus-visible:shadow-[var(--shadow-border-hover)] disabled:cursor-not-allowed disabled:opacity-50", className),
-	...props,
-	children
-}));
-NativeSelect.displayName = "NativeSelect";
-var Textarea = import_react.forwardRef(({ className, ...props }, ref) => {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
-		className: cn("flex min-h-28 w-full rounded-md bg-raised px-3 py-2.5 text-sm text-fg shadow-[var(--shadow-border)] transition-[box-shadow] duration-150 placeholder:text-subtle focus-visible:outline-none focus-visible:shadow-[var(--shadow-border-hover)] disabled:cursor-not-allowed disabled:opacity-50", className),
-		ref,
-		...props
-	});
-});
-Textarea.displayName = "Textarea";
-var Slider = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Slider$1, {
-	ref,
-	className: cn("relative flex w-full touch-none select-none items-center", className),
-	...props,
-	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderTrack, {
-		className: "relative h-1.5 w-full grow overflow-hidden rounded-full bg-raised shadow-[var(--shadow-border)]",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderRange, { className: "absolute h-full bg-accent" })
-	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderThumb, { className: "block size-5 rounded-full bg-accent shadow-sm ring-offset-bg transition-transform duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50" })]
-}));
-Slider.displayName = Slider$1.displayName;
-function SettingRow({ field, value, disabled, onChange }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: cn("grid gap-3 border-b border-border py-[var(--row-pad,16px)] last:border-b-0 sm:grid-cols-[minmax(0,1fr)_minmax(0,16rem)] sm:items-center", disabled && "opacity-60"),
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "min-w-0",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Label, {
-				htmlFor: field.key,
-				className: "text-[15px]",
-				children: field.label
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "mt-1 text-sm text-muted",
-				children: field.description
-			})]
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "sm:justify-self-end sm:w-full",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FieldControl, {
-				field,
-				value,
-				disabled,
-				onChange
-			})
-		})]
-	});
-}
-function FieldControl({ field, value, disabled, onChange }) {
-	if (field.type === "toggle") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "flex h-11 items-center justify-end",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch, {
-			id: field.key,
-			checked: Boolean(value),
-			disabled,
-			onCheckedChange: (c) => onChange(c)
-		})
-	});
-	if (field.type === "text") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Input, {
-		id: field.key,
-		value: String(value ?? ""),
-		disabled,
-		onChange: (e) => onChange(e.target.value)
-	});
-	if (field.type === "textarea") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Textarea, {
-		id: field.key,
-		value: String(value ?? ""),
-		disabled,
-		onChange: (e) => onChange(e.target.value),
-		className: "sm:w-full"
-	});
-	if (field.type === "select") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NativeSelect, {
-		id: field.key,
-		value: String(value ?? ""),
-		disabled,
-		onChange: (e) => onChange(e.target.value),
-		children: field.options?.map((o) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
-			value: o.value,
-			children: o.label
-		}, o.value))
-	});
-	if (field.type === "slider") {
-		const n = typeof value === "number" ? value : Number(value);
-		return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "flex items-center gap-3",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Slider, {
-				min: field.min,
-				max: field.max,
-				step: field.step,
-				value: [n],
-				disabled,
-				onValueChange: ([v]) => onChange(v ?? n),
-				className: "flex-1"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-				className: "w-14 text-right text-sm tabular text-muted",
-				children: [n, field.suffix ? ` ${field.suffix}` : ""]
-			})]
-		});
-	}
-	if (field.type === "segmented") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "flex rounded-lg bg-raised p-1 shadow-[var(--shadow-border)]",
-		children: field.options?.map((o) => {
-			const active = String(value) === o.value;
-			return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-				type: "button",
-				disabled,
-				onClick: () => onChange(o.value),
-				className: cn("h-9 flex-1 rounded-md px-2 text-[13px] font-medium transition-[background-color,color,opacity] duration-150", active ? "bg-accent text-accent-fg" : "text-muted hover:text-fg"),
-				children: o.label
-			}, o.value);
-		})
-	});
-	return null;
-}
-function FieldList({ fields, settings, disabled, onChange }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "rounded-2xl bg-surface px-5 shadow-[var(--shadow-border)]",
-		children: fields.map((field) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SettingRow, {
-			field,
-			value: settings[field.key],
-			disabled,
-			onChange: (v) => onChange(field.key, v)
-		}, field.key))
-	});
-}
-function AccessBanner({ access }) {
-	if (access === "write") return null;
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "rounded-xl bg-raised px-4 py-3 text-sm text-muted shadow-[var(--shadow-border)]",
-		children: access === "none" ? "You have no access to this area. Return to Root to edit without red tape." : "Read only. You can inspect these settings but not change them."
-	});
-}
-function Denied() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "rounded-2xl bg-surface px-6 py-16 text-center shadow-[var(--shadow-border)]",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-			className: "text-lg font-medium tracking-tight",
-			children: "No access"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-			className: "mt-2 text-sm text-muted",
-			children: "This area is hidden from the current role. Return to Root — Root always has write."
-		})]
-	});
-}
 var WALLPAPERS = [
 	{
 		id: "linen",
@@ -460,6 +302,12 @@ var RESOURCES = [
 	}
 ];
 var NAV = [
+	{
+		id: "console",
+		label: "Console",
+		group: "Workspace",
+		resource: null
+	},
 	{
 		id: "overview",
 		label: "Overview",
@@ -1683,7 +1531,672 @@ useControl.subscribe((state) => {
 		autosaving = false;
 	}, 180);
 });
+var TOWNS$1 = {
+	columbia: {
+		town: "Columbia",
+		region: "South Carolina",
+		country: "US",
+		postal: "29201",
+		timezone: "America/New_York"
+	},
+	harborwick: {
+		town: "Harborwick",
+		region: "New York",
+		country: "US",
+		postal: "11222",
+		timezone: "America/New_York"
+	},
+	austin: {
+		town: "Austin",
+		region: "Texas",
+		country: "US",
+		postal: "78701",
+		timezone: "America/Chicago"
+	},
+	london: {
+		town: "London",
+		region: "England",
+		country: "GB",
+		postal: "EC1A",
+		timezone: "Europe/London"
+	},
+	berlin: {
+		town: "Berlin",
+		region: "Berlin",
+		country: "DE",
+		postal: "10115",
+		timezone: "Europe/Berlin"
+	},
+	tokyo: {
+		town: "Tokyo",
+		region: "Tokyo",
+		country: "JP",
+		postal: "100-0001",
+		timezone: "Asia/Tokyo"
+	},
+	sydney: {
+		town: "Sydney",
+		region: "New South Wales",
+		country: "AU",
+		postal: "2000",
+		timezone: "Australia/Sydney"
+	}
+};
+var lineId = 1;
+function denied(resource) {
+	const s = useControl.getState();
+	if (!s.simulating) return null;
+	const access = accessOf(s.draft, s.actorId, resource);
+	if (canWrite(access)) return null;
+	return `denied: ${resource} is ${access}. Return to Root to write.`;
+}
+function promptHost() {
+	return useControl.getState().draft.settings.hostname || "console";
+}
+function run(raw) {
+	const input = raw.trim();
+	if (!input) return { lines: [] };
+	const [cmd, ...rest] = input.split(/\s+/);
+	const arg = rest.join(" ").trim();
+	const store = useControl.getState();
+	const settings = store.draft.settings;
+	const key = cmd.toLowerCase();
+	if (key === "clear") return {
+		lines: [],
+		clear: true
+	};
+	if (key === "help") return { lines: [
+		"status                         system snapshot",
+		"whoami                         current session",
+		"wallpaper list",
+		"wallpaper <name>               linen basalt harbor canopy adobe rain ink paper",
+		"wallpaper color <#hex>",
+		"owner <name>                   appoint a new owner",
+		"town <name>                    columbia harborwick austin london berlin tokyo sydney",
+		"town set <Town>                any town name",
+		"secure                         harden the system",
+		"wifi                           list networks",
+		"join <ssid>                    connect now",
+		"disconnect",
+		"get <key>",
+		"set <key> <value>",
+		"open <panel>",
+		"clear"
+	] };
+	if (key === "whoami") {
+		const member = memberById(store.draft, store.actorId);
+		return { lines: [store.simulating ? `${member?.name ?? "unknown"} · preview · ${member?.roleId ?? ""}` : "root · uid 0 · full write"] };
+	}
+	if (key === "status") {
+		const owner = memberById(store.draft, settings.ownerMemberId);
+		const wifi = store.draft.networks.find((n) => n.connected);
+		return { lines: [
+			`host      ${settings.hostname}`,
+			`system    ${settings.systemName}`,
+			`owner     ${owner?.name ?? "unset"}`,
+			`town      ${settings.town}, ${settings.region}`,
+			`wallpaper ${settings.wallpaperId}`,
+			`network   ${wifi?.ssid ?? "offline"}`,
+			`secure    ${securityScore(settings)}`,
+			`session   ${store.simulating ? "preview" : "root"}`
+		] };
+	}
+	if (key === "wallpaper") {
+		if (!arg || arg === "list") return { lines: WALLPAPERS.map((w) => `${w.id.padEnd(10)} ${w.name}`) };
+		const block = denied("wallpaper");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		if (arg.toLowerCase().startsWith("color")) {
+			const hex = arg.split(/\s+/)[1];
+			if (!hex || !/^#?[0-9a-fA-F]{6}$/.test(hex)) return {
+				lines: ["usage: wallpaper color #1c3a4a"],
+				error: true
+			};
+			const color = hex.startsWith("#") ? hex : `#${hex}`;
+			store.setSetting("customColor", color);
+			store.setSetting("wallpaperId", "color");
+			return { lines: [`wallpaper → ${color}`] };
+		}
+		const found = WALLPAPERS.find((w) => w.id === arg.toLowerCase() || w.name.toLowerCase() === arg.toLowerCase());
+		if (!found) return {
+			lines: [`unknown wallpaper: ${arg}`],
+			error: true
+		};
+		store.setSetting("wallpaperId", found.id);
+		return { lines: [`wallpaper → ${found.name}`] };
+	}
+	if (key === "owner") {
+		if (!arg) {
+			const owner = memberById(store.draft, settings.ownerMemberId);
+			return { lines: [owner ? `${owner.name}  ${owner.email}` : "no owner"] };
+		}
+		const block = denied("owner");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		store.appointOwner(arg, "");
+		return { lines: [`owner → ${arg}`] };
+	}
+	if (key === "town") {
+		if (!arg) return { lines: [`${settings.town}, ${settings.region} · ${settings.timezone}`] };
+		const block = denied("location");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		const parts = arg.split(/\s+/);
+		if (parts[0]?.toLowerCase() === "set") {
+			const name = parts.slice(1).join(" ");
+			if (!name) return {
+				lines: ["usage: town set Harborwick"],
+				error: true
+			};
+			store.applyTown({ town: name });
+			return { lines: [`town → ${name}`] };
+		}
+		const preset = TOWNS$1[arg.toLowerCase()];
+		if (!preset) return {
+			lines: [`unknown town preset: ${arg}`, "try: town set <name>"],
+			error: true
+		};
+		store.applyTown(preset);
+		return { lines: [`town → ${preset.town}, ${preset.region}`] };
+	}
+	if (key === "secure") {
+		const block = denied("security");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		store.hardenSystem();
+		return { lines: ["hardened · firewall, encryption, secure boot, 2FA, stealth, USB lock"] };
+	}
+	if (key === "wifi") return { lines: store.draft.networks.map((n) => `${n.connected ? "*" : " "} ${n.ssid.padEnd(22)} ${n.security}  ${n.signal}%`) };
+	if (key === "join") {
+		if (!arg) return {
+			lines: ["usage: join <ssid>"],
+			error: true
+		};
+		const block = denied("network");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		const existing = store.draft.networks.find((n) => n.ssid.toLowerCase() === arg.toLowerCase());
+		if (existing) store.connectWifi(existing.id);
+		else store.addWifi(arg, "wpa3", true);
+		return { lines: [`connected → ${arg}`] };
+	}
+	if (key === "disconnect") {
+		const block = denied("network");
+		if (block) return {
+			lines: [block],
+			error: true
+		};
+		store.disconnectWifi();
+		return { lines: ["wifi disconnected"] };
+	}
+	if (key === "open") {
+		const id = arg.toLowerCase();
+		const item = NAV.find((n) => n.id === id || n.label.toLowerCase() === id);
+		if (!item) return {
+			lines: [`unknown panel: ${arg}`],
+			error: true
+		};
+		store.setSection(item.id);
+		return { lines: [`opened ${item.label}`] };
+	}
+	if (key === "get") {
+		if (!arg || !(arg in settings)) return {
+			lines: ["usage: get <setting>"],
+			error: true
+		};
+		const value = settings[arg];
+		return { lines: [`${arg} = ${String(value)}`] };
+	}
+	if (key === "set") {
+		const [name, ...valueParts] = arg.split(/\s+/);
+		const value = valueParts.join(" ");
+		if (!name || !(name in settings) || value === "") return {
+			lines: ["usage: set <key> <value>"],
+			error: true
+		};
+		const settingKey = name;
+		const current = settings[settingKey];
+		const resource = resourceForSetting(settingKey);
+		if (resource) {
+			const block = denied(resource);
+			if (block) return {
+				lines: [block],
+				error: true
+			};
+		}
+		if (typeof current === "boolean") {
+			const on = value === "on" || value === "true" || value === "1";
+			if (!on && !(value === "off" || value === "false" || value === "0")) return {
+				lines: ["expected on or off"],
+				error: true
+			};
+			store.setSetting(settingKey, on);
+			return { lines: [`${name} → ${on ? "on" : "off"}`] };
+		}
+		if (typeof current === "number") {
+			const n = Number(value);
+			if (Number.isNaN(n)) return {
+				lines: ["expected a number"],
+				error: true
+			};
+			store.setSetting(settingKey, n);
+			return { lines: [`${name} → ${n}`] };
+		}
+		store.setSetting(settingKey, value);
+		return { lines: [`${name} → ${value}`] };
+	}
+	return {
+		lines: [`unknown command: ${cmd}`, "type help"],
+		error: true
+	};
+}
+function resourceForSetting(key) {
+	if (key === "wallpaperId" || key === "customWallpaper" || key === "customColor") return "wallpaper";
+	if (key === "ownerMemberId") return "owner";
+	if (key === "town" || key === "region" || key === "country" || key === "postal" || key === "timezone" || key === "language") return "location";
+	if (key === "hostname" || key === "airplaneMode" || key === "wifiRadio" || key === "ethernetEnabled" || key === "vpnEnabled" || key === "ipv6" || key === "addressMode" || key === "staticAddress" || key === "gateway" || key === "subnet" || key === "dnsMode" || key === "dnsServers" || key === "proxyEnabled" || key === "proxyHost") return "network";
+	if (key === "firewall" || key === "diskEncryption" || key === "secureBoot" || key === "stealthMode" || key === "twoFactorRequired" || key === "autoLockMinutes" || key === "loginAlerts" || key === "usbRestricted" || key === "remoteLogin") return "security";
+	if (key === "theme" || key === "density" || key === "reduceMotion" || key === "sidebarLabels" || key === "clock24h") return "appearance";
+	return "global";
+}
+function ConsolePanel() {
+	const hostname = useControl((s) => s.draft.settings.hostname);
+	const [lines, setLines] = (0, import_react.useState)([{
+		id: lineId++,
+		kind: "out",
+		text: "Helm console · root"
+	}, {
+		id: lineId++,
+		kind: "out",
+		text: "Changes apply immediately. Type help."
+	}]);
+	const [value, setValue] = (0, import_react.useState)("");
+	const scroller = (0, import_react.useRef)(null);
+	const inputRef = (0, import_react.useRef)(null);
+	(0, import_react.useEffect)(() => {
+		scroller.current?.scrollTo({ top: scroller.current.scrollHeight });
+	}, [lines]);
+	function submit() {
+		const text = value;
+		setValue("");
+		const result = run(text);
+		setLines((prev) => {
+			const next = result.clear ? [] : [...prev];
+			if (text.trim()) next.push({
+				id: lineId++,
+				kind: "in",
+				text
+			});
+			for (const line of result.lines) next.push({
+				id: lineId++,
+				kind: result.error ? "err" : "out",
+				text: line
+			});
+			return next.slice(-200);
+		});
+		inputRef.current?.focus();
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "flex min-h-0 flex-1 flex-col bg-bg font-mono text-sm",
+		onClick: () => inputRef.current?.focus(),
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "flex h-11 shrink-0 items-center justify-between border-b border-border px-4 text-xs text-subtle",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["root@", hostname] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [RESOURCES.length, " areas · write"] })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				ref: scroller,
+				className: "min-h-0 flex-1 overflow-y-auto px-4 py-4",
+				children: lines.map((line) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					className: line.kind === "err" ? "text-danger" : line.kind === "in" ? "text-fg" : "text-muted",
+					children: [line.kind === "in" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "text-subtle",
+						children: [
+							"root@",
+							promptHost(),
+							":~# "
+						]
+					}) : null, line.text]
+				}, line.id))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("form", {
+				className: "flex h-14 shrink-0 items-center gap-2 border-t border-border px-4",
+				onSubmit: (e) => {
+					e.preventDefault();
+					submit();
+				},
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+					className: "shrink-0 text-subtle",
+					htmlFor: "console-input",
+					children: [
+						"root@",
+						hostname,
+						":~#"
+					]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+					id: "console-input",
+					ref: inputRef,
+					value,
+					autoFocus: true,
+					autoComplete: "off",
+					spellCheck: false,
+					onChange: (e) => setValue(e.target.value),
+					className: "h-11 min-w-0 flex-1 bg-transparent text-fg outline-none"
+				})]
+			})
+		]
+	});
+}
+var promptEvent = null;
+var snap = {
+	canPrompt: false,
+	installed: false
+};
+var listeners = /* @__PURE__ */ new Set();
+var wired = false;
+function emit(next) {
+	snap = {
+		...snap,
+		...next
+	};
+	listeners.forEach((fn) => fn());
+}
+function standalone() {
+	return window.matchMedia("(display-mode: standalone)").matches || "standalone" in navigator && Boolean(navigator.standalone);
+}
+function wireInstall() {
+	if (wired || typeof window === "undefined") return;
+	wired = true;
+	if (standalone()) emit({ installed: true });
+	window.addEventListener("beforeinstallprompt", (event) => {
+		event.preventDefault();
+		promptEvent = event;
+		emit({
+			canPrompt: true,
+			installed: false
+		});
+	});
+	window.addEventListener("appinstalled", () => {
+		promptEvent = null;
+		emit({
+			canPrompt: false,
+			installed: true
+		});
+	});
+	if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(() => {});
+}
+function subscribe(fn) {
+	listeners.add(fn);
+	return () => listeners.delete(fn);
+}
+function getSnap() {
+	return snap;
+}
+function InstallApp({ prominent = false }) {
+	const state = (0, import_react.useSyncExternalStore)(subscribe, getSnap, getSnap);
+	const [open, setOpen] = (0, import_react.useState)(false);
+	const [hint, setHint] = (0, import_react.useState)("android");
+	(0, import_react.useEffect)(() => {
+		wireInstall();
+		const ua = navigator.userAgent;
+		if (/iPhone|iPad|iPod/i.test(ua)) setHint("ios");
+		else if (/Android/i.test(ua)) setHint("android");
+		else setHint("desktop");
+	}, []);
+	if (state.installed) {
+		if (!prominent) return null;
+		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "rounded-2xl bg-surface px-5 py-4 text-sm text-muted shadow-[var(--shadow-border)]",
+			children: "Helm is installed on this device."
+		});
+	}
+	async function install() {
+		if (promptEvent) {
+			await promptEvent.prompt();
+			const choice = await promptEvent.userChoice;
+			promptEvent = null;
+			emit({
+				canPrompt: false,
+				installed: choice.outcome === "accepted"
+			});
+			if (choice.outcome === "accepted") return;
+		}
+		setOpen(true);
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [prominent ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "mb-4 flex flex-col gap-3 rounded-2xl bg-surface p-5 shadow-[var(--shadow-border)] sm:flex-row sm:items-center sm:justify-between",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-sm font-medium",
+			children: "Install Helm"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "mt-1 text-sm text-muted",
+			children: "Adds it to your home screen. Opens full screen, with your settings kept on this device."
+		})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+			className: "shrink-0",
+			onClick: install,
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "size-4" }), "Install"]
+		})]
+	}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+		size: "sm",
+		onClick: install,
+		"aria-label": "Install Helm",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "size-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+			className: "hidden min-[380px]:inline",
+			children: "Install"
+		})]
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog, {
+		open,
+		onOpenChange: setOpen,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, { children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogHeader, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, { children: "Install Helm" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, { children: state.canPrompt ? "Your browser can install it directly." : "Add Helm to your home screen. It opens like an app, without the browser bar." })] }),
+			hint === "android" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+				className: "mt-4 list-decimal space-y-2 pl-5 text-sm text-muted",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Open Helm in Chrome once it is published." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Tap the menu, then Install app or Add to Home screen." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Confirm. The icon lands next to your other apps." })
+				]
+			}) : null,
+			hint === "ios" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+				className: "mt-4 list-decimal space-y-2 pl-5 text-sm text-muted",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Open Helm in Safari." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Tap Share, then Add to Home Screen." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Tap Add." })
+				]
+			}) : null,
+			hint === "desktop" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+				className: "mt-4 list-decimal space-y-2 pl-5 text-sm text-muted",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Open the published Helm link in Chrome or Edge." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Click the install icon in the address bar." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Or open that link on your phone and use the menu to install." })
+				]
+			}) : null,
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+				className: "mt-5 w-full",
+				onClick: () => setOpen(false),
+				children: "Got it"
+			})
+		] })
+	})] });
+}
+var Label = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root, {
+	ref,
+	className: cn("text-sm font-medium text-fg leading-none", className),
+	...props
+}));
+Label.displayName = Root.displayName;
+var Switch = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch$1, {
+	className: cn("peer relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full shadow-[var(--shadow-border)] transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-40 data-[state=checked]:bg-accent data-[state=unchecked]:bg-raised after:absolute after:inset-[-10px] after:content-['']", className),
+	...props,
+	ref,
+	children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SwitchThumb, { className: cn("pointer-events-none block size-5 translate-x-0.5 rounded-full bg-fg shadow-sm transition-transform duration-150 ease-out data-[state=checked]:translate-x-[22px] data-[state=checked]:bg-accent-fg") })
+}));
+Switch.displayName = Switch$1.displayName;
+var NativeSelect = import_react.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
+	ref,
+	className: cn("flex h-11 w-full appearance-none rounded-md bg-raised bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22none%22 stroke=%22%239a9890%22 stroke-width=%221.6%22><path d=%22M2.5 4.5 6 8l3.5-3.5%22/></svg>')] bg-[length:12px] bg-[right_12px_center] bg-no-repeat px-3 pr-9 text-sm text-fg shadow-[var(--shadow-border)] focus-visible:outline-none focus-visible:shadow-[var(--shadow-border-hover)] disabled:cursor-not-allowed disabled:opacity-50", className),
+	...props,
+	children
+}));
+NativeSelect.displayName = "NativeSelect";
+var Textarea = import_react.forwardRef(({ className, ...props }, ref) => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
+		className: cn("flex min-h-28 w-full rounded-md bg-raised px-3 py-2.5 text-sm text-fg shadow-[var(--shadow-border)] transition-[box-shadow] duration-150 placeholder:text-subtle focus-visible:outline-none focus-visible:shadow-[var(--shadow-border-hover)] disabled:cursor-not-allowed disabled:opacity-50", className),
+		ref,
+		...props
+	});
+});
+Textarea.displayName = "Textarea";
+var Slider = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Slider$1, {
+	ref,
+	className: cn("relative flex w-full touch-none select-none items-center", className),
+	...props,
+	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderTrack, {
+		className: "relative h-1.5 w-full grow overflow-hidden rounded-full bg-raised shadow-[var(--shadow-border)]",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderRange, { className: "absolute h-full bg-accent" })
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SliderThumb, { className: "block size-5 rounded-full bg-accent shadow-sm ring-offset-bg transition-transform duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50" })]
+}));
+Slider.displayName = Slider$1.displayName;
+function SettingRow({ field, value, disabled, onChange }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: cn("grid gap-3 border-b border-border py-[var(--row-pad,16px)] last:border-b-0 sm:grid-cols-[minmax(0,1fr)_minmax(0,16rem)] sm:items-center", disabled && "opacity-60"),
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "min-w-0",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Label, {
+				htmlFor: field.key,
+				className: "text-[15px]",
+				children: field.label
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "mt-1 text-sm text-muted",
+				children: field.description
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "sm:justify-self-end sm:w-full",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FieldControl, {
+				field,
+				value,
+				disabled,
+				onChange
+			})
+		})]
+	});
+}
+function FieldControl({ field, value, disabled, onChange }) {
+	if (field.type === "toggle") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "flex h-11 items-center justify-end",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Switch, {
+			id: field.key,
+			checked: Boolean(value),
+			disabled,
+			onCheckedChange: (c) => onChange(c)
+		})
+	});
+	if (field.type === "text") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Input, {
+		id: field.key,
+		value: String(value ?? ""),
+		disabled,
+		onChange: (e) => onChange(e.target.value)
+	});
+	if (field.type === "textarea") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Textarea, {
+		id: field.key,
+		value: String(value ?? ""),
+		disabled,
+		onChange: (e) => onChange(e.target.value),
+		className: "sm:w-full"
+	});
+	if (field.type === "select") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NativeSelect, {
+		id: field.key,
+		value: String(value ?? ""),
+		disabled,
+		onChange: (e) => onChange(e.target.value),
+		children: field.options?.map((o) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+			value: o.value,
+			children: o.label
+		}, o.value))
+	});
+	if (field.type === "slider") {
+		const n = typeof value === "number" ? value : Number(value);
+		return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "flex items-center gap-3",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Slider, {
+				min: field.min,
+				max: field.max,
+				step: field.step,
+				value: [n],
+				disabled,
+				onValueChange: ([v]) => onChange(v ?? n),
+				className: "flex-1"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+				className: "w-14 text-right text-sm tabular text-muted",
+				children: [n, field.suffix ? ` ${field.suffix}` : ""]
+			})]
+		});
+	}
+	if (field.type === "segmented") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "flex rounded-lg bg-raised p-1 shadow-[var(--shadow-border)]",
+		children: field.options?.map((o) => {
+			const active = String(value) === o.value;
+			return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				disabled,
+				onClick: () => onChange(o.value),
+				className: cn("h-9 flex-1 rounded-md px-2 text-[13px] font-medium transition-[background-color,color,opacity] duration-150", active ? "bg-accent text-accent-fg" : "text-muted hover:text-fg"),
+				children: o.label
+			}, o.value);
+		})
+	});
+	return null;
+}
+function FieldList({ fields, settings, disabled, onChange }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "rounded-2xl bg-surface px-5 shadow-[var(--shadow-border)]",
+		children: fields.map((field) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SettingRow, {
+			field,
+			value: settings[field.key],
+			disabled,
+			onChange: (v) => onChange(field.key, v)
+		}, field.key))
+	});
+}
+function AccessBanner({ access }) {
+	if (access === "write") return null;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "rounded-xl bg-raised px-4 py-3 text-sm text-muted shadow-[var(--shadow-border)]",
+		children: access === "none" ? "You have no access to this area. Return to Root to edit without red tape." : "Read only. You can inspect these settings but not change them."
+	});
+}
+function Denied() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "rounded-2xl bg-surface px-6 py-16 text-center shadow-[var(--shadow-border)]",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "text-lg font-medium tracking-tight",
+			children: "No access"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "mt-2 text-sm text-muted",
+			children: "This area is hidden from the current role. Return to Root — Root always has write."
+		})]
+	});
+}
 var TOWNS = [
+	{
+		town: "Columbia",
+		region: "South Carolina",
+		country: "US",
+		postal: "29201",
+		timezone: "America/New_York"
+	},
 	{
 		town: "Harborwick",
 		region: "New York",
@@ -1739,7 +2252,7 @@ function TownPresets({ disabled }) {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-1 text-sm text-muted",
-				children: "One tap fills town, region, country, postal code, and timezone."
+				children: "One tap fills town, region, country, postal code, and timezone. Or type any town in the fields below."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "mt-4 flex flex-wrap gap-2",
@@ -1810,6 +2323,7 @@ function OverviewPanel() {
 			title: draft.settings.systemName,
 			body: "Running as Root, even with nothing else set up. Wallpaper, a new owner, town, networks, security, and globals all apply immediately. No save button. No approval."
 		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InstallApp, { prominent: true }),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "grid gap-3 sm:grid-cols-2",
 			children: tiles.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -2935,6 +3449,7 @@ function formatTime(at, clock24h) {
 	});
 }
 var ICONS = {
+	console: Terminal,
 	overview: LayoutDashboard,
 	wallpaper: Image$1,
 	appearance: Palette,
@@ -2989,51 +3504,47 @@ function HelmApp() {
 	const paper = resolveWallpaper(settings);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(TooltipProvider, {
 		delayDuration: 200,
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "relative min-h-dvh text-fg",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "pointer-events-none absolute inset-0 overflow-hidden",
-					children: [paper.kind === "photo" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: paper.src,
-						alt: "",
-						className: "h-full w-full object-cover"
-					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "h-full w-full",
-						style: { background: paper.wash }
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-bg/72" })]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "relative flex min-h-dvh flex-col p-0 sm:p-3",
-					children: [
-						simulating ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SimBanner, {}) : null,
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex min-h-0 flex-1 overflow-hidden sm:rounded-2xl sm:bg-bg/90 sm:shadow-[var(--shadow-border)]",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DesktopNav, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex min-w-0 flex-1 flex-col bg-bg/40",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TopBar, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
-									className: "min-h-0 flex-1 overflow-y-auto px-4 py-6 sm:px-8 sm:py-8",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "mx-auto w-full max-w-4xl pb-24",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionBody, { section })
-									})
-								})]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "relative min-h-dvh text-fg",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "pointer-events-none absolute inset-0 overflow-hidden",
+				children: [paper.kind === "photo" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: paper.src,
+					alt: "",
+					className: "h-full w-full object-cover"
+				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "h-full w-full",
+					style: { background: paper.wash }
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-bg/72" })]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "relative flex min-h-dvh flex-col p-0 sm:p-3",
+				children: [
+					simulating ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SimBanner, {}) : null,
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex min-h-0 flex-1 overflow-hidden sm:rounded-2xl sm:bg-bg/90 sm:shadow-[var(--shadow-border)]",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DesktopNav, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex min-w-0 flex-1 flex-col bg-bg/40",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TopBar, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
+								className: cn("min-h-0 flex-1", section === "console" ? "flex flex-col overflow-hidden" : "overflow-y-auto px-4 py-6 sm:px-8 sm:py-8"),
+								children: section === "console" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ConsolePanel, {}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "mx-auto w-full max-w-4xl pb-24",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionBody, { section })
+								})
 							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CommandPalette, {})
-					]
-				})]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CommandPalette, {}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster, {
-				theme: resolvedTheme === "light" ? "light" : "dark",
-				position: "bottom-right",
-				toastOptions: { classNames: {
-					toast: "bg-surface text-fg shadow-[var(--shadow-border)] border-0",
-					title: "text-fg",
-					description: "text-muted"
-				} }
-			})
-		]
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CommandPalette, {})
+				]
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster, {
+			theme: resolvedTheme === "light" ? "light" : "dark",
+			position: "bottom-right",
+			toastOptions: { classNames: {
+				toast: "bg-surface text-fg shadow-[var(--shadow-border)] border-0",
+				title: "text-fg",
+				description: "text-muted"
+			} }
+		})]
 	});
 }
 function SectionBody({ section }) {
@@ -3044,7 +3555,7 @@ function SectionBody({ section }) {
 			section: "appearance",
 			kicker: "Workspace",
 			title: "Appearance",
-			body: "Theme, density, and motion. Changes apply while you edit — save to keep them."
+			body: "Theme, density, and motion. Root applies them the moment you change them."
 		});
 		case "owner": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(OwnerPanel, {});
 		case "location": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FieldsPanel, {
@@ -3137,7 +3648,7 @@ function DesktopNav() {
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NavList, {})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "border-t border-border p-3",
+				className: "border-t border-border p-3 pb-16",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RootChip, {})
 			})
 		]
@@ -3275,53 +3786,57 @@ function TopBar() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "ml-auto flex items-center gap-2",
-				children: [section !== "overview" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, {
-					className: "hidden sm:inline-flex",
-					variant: access === "write" ? "write" : access === "read" ? "read" : "none",
-					children: access === "write" ? "Write" : access === "read" ? "Read" : "No access"
-				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, {
-					className: "hidden sm:inline-flex",
-					variant: "root",
-					children: "Root session"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenu, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuTrigger, {
-					asChild: true,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-						variant: "secondary",
-						size: "sm",
-						className: "gap-2",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "flex size-5 items-center justify-center rounded-full bg-accent text-[9px] font-semibold text-accent-fg",
-							children: actor.member.initials
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "hidden max-w-28 truncate sm:inline",
-							children: actor.isRoot ? "Root" : actor.member.name
-						})]
-					})
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuContent, {
-					align: "end",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuLabel, { children: "Run as" }),
-						members.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuItem, {
-							onSelect: () => m.id === "member-root" ? returnToRoot() : simulate(m.id),
-							children: [m.name, m.id === "member-root" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "ml-auto text-[11px] text-subtle",
-								children: "always"
-							}) : null]
-						}, m.id)),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuSeparator, {}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuItem, {
-							onSelect: () => {
-								resetFactory();
-								toast("Restored factory defaults");
-							},
-							children: "Reset everything"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuItem, {
-							onSelect: () => returnToRoot(),
-							children: "Return to Root"
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InstallApp, {}),
+					section !== "overview" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, {
+						className: "hidden sm:inline-flex",
+						variant: access === "write" ? "write" : access === "read" ? "read" : "none",
+						children: access === "write" ? "Write" : access === "read" ? "Read" : "No access"
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Badge, {
+						className: "hidden sm:inline-flex",
+						variant: "root",
+						children: "Root session"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenu, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuTrigger, {
+						asChild: true,
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+							variant: "secondary",
+							size: "sm",
+							className: "gap-2",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "flex size-5 items-center justify-center rounded-full bg-accent text-[9px] font-semibold text-accent-fg",
+								children: actor.member.initials
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "hidden max-w-28 truncate sm:inline",
+								children: actor.isRoot ? "Root" : actor.member.name
+							})]
 						})
-					]
-				})] })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuContent, {
+						align: "end",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuLabel, { children: "Run as" }),
+							members.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuItem, {
+								onSelect: () => m.id === "member-root" ? returnToRoot() : simulate(m.id),
+								children: [m.name, m.id === "member-root" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "ml-auto text-[11px] text-subtle",
+									children: "always"
+								}) : null]
+							}, m.id)),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuSeparator, {}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuItem, {
+								onSelect: () => {
+									resetFactory();
+									toast("Restored factory defaults");
+								},
+								children: "Reset everything"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuItem, {
+								onSelect: () => returnToRoot(),
+								children: "Return to Root"
+							})
+						]
+					})] })
+				]
 			})
 		]
 	});
